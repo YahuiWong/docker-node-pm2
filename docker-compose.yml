@@ -1,0 +1,17 @@
+version: '1'
+# 定义四个服务nginx,php,mysql,redis
+services:
+  # REDIS
+  redis:
+    build: ./
+    ports:
+      - "80:80"
+      - "443:443"   
+    volumes:
+      - ./app:/app
+    restart: always
+    container_name: node-pm2
+
+networks:
+  frontend:
+  backend:
