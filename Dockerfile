@@ -1,8 +1,8 @@
-FROM node:6.2.1
+FROM node:9.8.0
 
-MAINTAINER Armagan Amcalar "armagan@amcalar.com"
+MAINTAINER ArthurWang "yahui9119@live.com"
 
-RUN npm install -g pm2@1.1.3
+RUN npm install -g pm2@2.10.1
 
 VOLUME ["/app"]
 ADD start /start
