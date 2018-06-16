@@ -1,4 +1,4 @@
-FROM node:9.8.0
+FROM node:9.11
 
 MAINTAINER ArthurWang "yahui9119@live.com"
 
