@@ -1,9 +1,12 @@
-version: '1'
+version: '2'
 # 定义四个服务nginx,php,mysql,redis
 services:
   # REDIS
-  redis:
+  pm2:
     build: ./
+    environment:
+      APP: pm2.json
+      WATCH: "false"
     ports:
       - "80:80"
       - "443:443"   
@@ -11,7 +14,6 @@ services:
       - ./app:/app
     restart: always
     container_name: node-pm2
-
 networks:
   frontend:
   backend:

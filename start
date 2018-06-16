@@ -15,4 +15,5 @@ if [ "$WATCH" == "true" ]; then
 fi
 
 cd /app
+yarn
 $COMMAND

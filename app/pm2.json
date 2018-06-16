@@ -1,0 +1,18 @@
+
+{
+    "apps": [{
+      "name": "app",
+      "script": "app.js",
+      "cwd": "./",
+      "instances" : "max",
+      "exec_mode": "cluster",
+      "error_file" : "./logs/pm2/app-err.log",
+      "pid_file"   : "./logs/pm2/app.pid",
+      "max_memory_restart": "500M",
+      "autorestart": true,
+      "node_args": [],
+      "args": [],
+      "env": {
+      }
+    }]
+  }
