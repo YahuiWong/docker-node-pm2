@@ -4,7 +4,7 @@ The image will use `/app` folder as the place for the source code and the workin
 
     -v /path/to/app/source:/app
 
-Also, the executable (app entry js file) should be noted as the environment variable APP. The default value for APP variable is `app.js`.
+Also, the executable (app entry js file) should be noted as the environment variable APP. The default value for APP variable is `pm2.json`.
 
 If you would like to enable files watching for any code changes, please set environment variable WATCH to `true`. The default value for WATCH variable is `false`. 
 
