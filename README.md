@@ -12,4 +12,4 @@ The container exposes 80 and 443 ports so you can bind to them.
 
 So a complete command for running a node.js application with pm2 could be;
 
-    docker run -d -e "APP=app.js" -e "WATCH=true" -p 3000:80 -v /path/to/app/source:/app dashersw/node-pm2
+    docker run -d -e "APP=app.json" -e "WATCH=true" -p 3000:80 -v /path/to/app/source:/app dashersw/node-pm2
