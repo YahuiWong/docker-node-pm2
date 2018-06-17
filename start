@@ -8,6 +8,8 @@ if [ -z "$WATCH" ]; then
     export WATCH=false
 fi
 
+npm i -g yarn pm2
+
 COMMAND="pm2 start -x $APP --no-daemon"
 
 if [ "$WATCH" == "true" ]; then
