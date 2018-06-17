@@ -13,7 +13,9 @@ COMMAND="pm2 start -x $APP --no-daemon"
 if [ "$WATCH" == "true" ]; then
     COMMAND=$COMMAND" --watch"
 fi
-
+if [ -z "$GLOBALPACKAGE" ]; then
+    npm i -g $GLOBALPACKAGE
+fi
 cd /app
 yarn
 $COMMAND
