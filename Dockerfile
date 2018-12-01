@@ -1,4 +1,4 @@
-FROM node:9.11
+FROM node:11-alpine
 
 MAINTAINER ArthurWang "yahui9119@live.com"
 
